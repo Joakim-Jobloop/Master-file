@@ -1,4 +1,12 @@
+
+// Basic conditionals:
+
+console.log("Hello world!");
+
+
+
 let x = 10;
+
 
 if (x === 10) {
     console.log("x is 10");
@@ -9,6 +17,19 @@ if (x === 10) {
 } else {
     console.log("x is not a number");
 }
+
+let y = 9;
+
+console.log(x + y);
+
+x = x * 2; // x er 20
+y = y * 2;
+
+console.log(x);
+
+x = 40; // x er 40
+
+console.log(x);
 
 // Bar logikk:
 
@@ -50,25 +71,3 @@ if (randomNumber > 5) {
 console.log(`Tallet er: ${randomNumber}`);
 
 
-function getRandomNumber(maxNumber) {
-  return Math.round(Math.random() * maxNumber) + 1; 
-}
-
-console.log(getRandomNumber(9649))
-
-// Kompliment funksjon:
-function giveCompliment() {
-    const compliments = [
-        "You're awesome!",
-        "You're a star!",
-        "You make the world brighter!",
-        "You're a superhero!",
-        "You're the best!",
-    ];
-
-    const randomIndex = Math.floor(Math.random() * compliments.length)
-    const compliment = compliments[randomIndex];
-    return compliment;
-}
-
-console.log(giveCompliment())
