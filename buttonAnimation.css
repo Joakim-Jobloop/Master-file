@@ -1,0 +1,56 @@
+button {
+  padding: 4px 16px;
+  height: fit-content;
+
+}
+
+button.one {
+  transition: transform 0.3s ;
+}
+button.one:hover {
+  transform: scale(1.05);
+}
+
+
+button.two {
+  transition: transition 1s cubic-bezier(.19,1,.22,1);
+}
+button.two:hover {
+  animation: shrink 1s ease forwards;
+}
+
+button.three {
+  transition: transform 1s cubic-bezier(.19,1,.22,1);
+}
+button.three:hover {
+  transform: rotate(350deg);
+}
+
+
+
+@keyframes shaky {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.8);
+  }
+
+  75% {
+    transform: scale(1.6);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes shrink {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}
