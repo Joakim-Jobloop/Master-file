@@ -120,7 +120,7 @@ button.superstyled:active {
   }
 
   100% {
-    background-color: #3498db;
+    background-color: #cadb34;
     transform: translate(-50%, -50%);
   }
 }
