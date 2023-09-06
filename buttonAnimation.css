@@ -31,19 +31,23 @@ button.three:hover {
 
 button.superstyled {
   transition: all 0.3s ease;
-  background-color: rgba(0, 0, 0, 0.159);
+  background-color: rgba(0, 0, 0, 0);
   border: solid black 2px;
   border-radius: 500px;
-  padding: 4px 18px;
+  padding: 8px 24px;
+  box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.856);
 }
 
 button.superstyled span {
   font-weight: 500;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 button.superstyled:hover {
   transform: scale(1.05);
+  color: white;
+  border-color: white;
+  box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.0);
   background-color: rgb(12, 104, 233);
   cursor: pointer;
 }
