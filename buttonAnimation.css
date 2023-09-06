@@ -16,7 +16,7 @@ button.two {
   transition: transition 1s cubic-bezier(.19,1,.22,1);
 }
 button.two:hover {
-  animation: shrink 1s ease forwards;
+  animation: shrink 1s ease both;
 }
 
 button.three {
@@ -26,7 +26,28 @@ button.three:hover {
   transform: rotate(350deg);
 }
 
+button.superstyled {
+  transition: transform 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.159);
+  border: solid black 2px;
+  border-radius: 500px;
+  padding: 4px 18px;
+}
+button.superstyled span {
+  font-weight: 500;
+  font-size: 12px;
+} 
 
+button.superstyled:hover {
+  transform: scale(1.05);
+  animation:bgchange 1s ease forwards;
+  cursor: pointer;
+}
+
+button.superstyled:active {
+  transform: scale(0.95);
+  cursor: pointer;
+}
 
 @keyframes shaky {
   0% {
@@ -52,5 +73,14 @@ button.three:hover {
   }
   100% {
     transform: scale(0.5);
+  }
+}
+
+@keyframes bgchange {
+  from {
+    background-color: rgba(0, 0, 0, 0.159);
+  }
+  to {
+    background-color: rgb(12, 104, 233);
   }
 }
