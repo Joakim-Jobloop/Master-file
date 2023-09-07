@@ -1,6 +1,11 @@
 const names = ["Tom", "Eric", "Jessica", "Scott", "Anna", "Carl", "Elisabeth", "Benny", "Oliver", "Andy", "Jenny", "Ashley", "Erin", "Patrick"];
 
-console.log(names.length);
+//! DRY - Don't Repeat Yourself
+// console.log(`Good day ${names[0]}`);
+// console.log(`Good day ${names[1]}`);
+// console.log(`Good day ${names[2]}`);
+// console.log(`Good day ${names[3]}`);
+// man måtte ha skrevet disse console.loggene fram til man hadde skrevet hele arrayet over.
 
 const greeter = (name) => `Hello ${name}, have a good day!`;
 
@@ -8,12 +13,7 @@ for (let i = 0; i < names.length; i++) {
     console.log(greeter(names[i]));
 }
 
-
-// Oppgave: skriv om const greeter til en funksjon greeter
-
-// function greeter() {
-
-// }
+// Oppgave 1: skriv om const greeter til en funksjon greeter
 
 anotherArray = ["tom", "sarah", "jimmy"]
 
@@ -107,6 +107,22 @@ function generatePassword(len) {
 console.log(generatePassword(50))
 
 
+// simpleste loopen i en funksjon:
+function enkelLoop() {
+    for (let i = 0; i < 5; i++) {
+        console.log(i + 1)
+    }
+}
+
+console.log(enkelLoop());
+
+
+// simpel loop utenfor funksjon som kjøres med en gang nettsiden lastes:
+for (let i = 0; i < 5; i++) {
+    console.log(i + 1)
+}
+
+// Oppgave 7: Lag en funksjon som returnerer noen tilfeldige lotto tall (hint: bruk 2 separate funksjoner som kombineres på slutten i en konsoll logg)
 
 
 
