@@ -3,6 +3,7 @@
     margin: 0;
 }
 
+
 body {
     display: flex;
     gap: 50px;
@@ -18,6 +19,8 @@ body {
     background-color: aquamarine;
 }
 
+
+
 div.grid {
     display: grid;
     gap: 5px;
@@ -29,9 +32,10 @@ div.grid {
     min-height: 50vh;
     background-color: azure;
     animation: slideIn ease 2s;
+
 }
 
-div.super {}
+
 
 @keyframes fadeInAnimation {
     0% {
@@ -52,3 +56,7 @@ div.super {}
         transform: translateX(0%);
     }
 }
+
+/* input[type=text] {
+    
+} */
