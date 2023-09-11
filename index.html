@@ -1,38 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Master file</title>
-    <link rel="stylesheet" href="buttonAnimation.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="/images/icon/favicon.jpg">
-    <!-- <script src="conditionals.js"></script> -->
-    <!-- <script src="functions.js"></script> -->
-    <!-- <script src="JS_oppgave_1.js"></script> -->
-    <!-- <script src="methods.js"></script> -->
-    <script src="loops.js"></script>
-</head>
-
-<body>
-    <div class="grid">
-        <button class="one">big?</button>
-        <button class="two">*Thump thump*</button>
-        <button class="three">spin me right round</button>
-        <button class=""></button>
-        <button class=""></button>
-        <button class=""></button>
-        <p>My mother has <span class="mothereyes" id="mothereyes" style="color:red">red</span>
-            eyes.</p>
-    </div>
-    <div class="super"><button class="superstyled"><span>Contact now!</span></button></div>
-
-    <div class="moving-box"></div>
-    <a href="contact.html">Contact Us</a>
-
-</body>
-
-</html>
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Master file</title>
+            <link rel="stylesheet" href="buttonAnimation.css">
+            <link rel="stylesheet" href="styles.css">
+            <link rel="icon" type="image/x-icon" href="/images/icon/favicon.jpg">
+            <!-- <script src="conditionals.js"></script> -->
+            <!-- <script src="functions.js"></script> -->
+            <!-- <script src="JS_oppgave_1.js"></script> -->
+            <script src="methods.js"></script>
+            <!-- <script src="loops.js"></script> -->
+            <!-- <script src="countNumbersWithButton.js"></script> -->
+        </head>
+        <body>
+            <div class="grid">
+                <button class="one">big?</button>
+                <button class="two">*Thump thump*</button>
+                <button class="three">spin me right round</button>
+                <button class=""></button>
+                <button class=""></button>
+                <button class=""></button>
+                <p>
+                    My mother has
+                    <span class="mothereyes" id="mothereyes" style="color:red">red</span>
+                    eyes.
+                </p>
+            </div>
+            <div class="super">
+                <button class="superstyled">
+                    <span>Contact now!</span>
+                </button>
+            </div>
+            <!-- <div class="moving-box"></div> -->
+            <button onclick="countNumbers()">Count Numbers</button>
+            <!-- <button id="countButton">Count Numbers</button> -->
+            <!-- <a href="contact.html">Contact Us</a> -->
+            <div class="calculator">
+                <div class="calc-inputs">
+                    <!-- <label for="num1-el">Number 1:</label> -->
+                    <input type="number" id="num1-el">
+                    <!-- <label for="num1-el">Number 2:</label> -->
+                    <input type="number" id="num2-el">
+                    <!-- <span id="num1-el"></span>
+                    <span id="num2-el"></span> -->
+                </div>
+                <br>
+                <button onclick="add()">Add</button>
+                <button onclick="subtract()">Subtract</button>
+                <button onclick="divide()">Divide</button>
+                <button onclick="multiply()">Multiply</button>
+                <br>
+                <span id="sum-el">Sum:</span>
+                <script src="calculator.js"></script>
+            </div>
+        </body>
+    </html>

@@ -35,7 +35,19 @@ div.grid {
 
 }
 
+div.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 100px;
+}
 
+.calc-inputs {
+    display: flex;
+    flex-direction: column;
+}
 
 @keyframes fadeInAnimation {
     0% {

@@ -13,13 +13,14 @@ console.log(myString.toUpperCase());
 
 console.log(myString.length);
 //
-console.log.apply(myString.slice(4));
-// Tar bort alt etter index 4. //? Fungerer ikke?
+console.log(myString.slice(4));
+// Tar bort index 0-4
 console.log(myString.substring(4, 10));
+// Viser stringindex 5-9
 
 console.log(myString.replace("vanskelig", "gøy"));
 // første parameter bytter ut med andre parameter
-console.log(myString.toLocaleLowerCase());
+console.log(myString.toLowerCase());
 // gjør om hele stringen til lowercase
 myString = "   JavaScript er vanskelig   ";
 
@@ -31,7 +32,7 @@ myString = "JavaScript er vanskelig";
 
 console.log(myString[0]);
 // finner hva som ligger i første plass i setningen (etter ")
-console.log(myString.charAt(1));
+console.log(myString.charAt(0));
 // samme som over
 console.log(myString.split(""));
 // splitter hvert enkelt bokstav i en setning inn til en array
@@ -49,7 +50,8 @@ console.log(x.toFixed(4));
 // Tar med 4 desimaler
 console.log(x.toPrecision(5));
 // Tar med antall tall (bryr seg ikke om ".")
-console.log(x.toExponential(3));
+const y = 1557432568379162;
+console.log(y.toExponential(3));
 // Scientific notation
 
 //! Arrays
@@ -58,7 +60,7 @@ let fruits = ["Apple", "Pear", "Mango", "Peach", "Melon", "Banana"];
 
 console.log(fruits.length);
 // Gir antall indexer i en array
-console.log(fruits.join(" "));
+console.log(fruits.join(", "));
 // Gjør en array til en string med mellomrom
 console.log(fruits.toString());
 //! Ikke bruk den over
@@ -77,15 +79,21 @@ fruits.unshift("Orange");
 console.log(fruits);
 
 fruits[3] = "Lemon";
+// fruits[1] = "Lemon";
+// fruits[0] = "Lemon";
+// fruits[2] = "Lemon";
 // Bytter ut array[3] med "Lemon"
 console.log(fruits);
 
 fruits = ["Apple", "Pear", "Mango", "Peach", "Melon", "Banana"];
 let fruits2 = ["Lemon", "Orange", "Cherry"];
 
+//! det under fungerer dårlig
+// console.log(fruits + fruits2);
+
 console.log(fruits.concat(fruits2));
 // Outputter begge arraysa
-console.log(fruits.concat(fruits2, ["Mandarin"]));
+console.log(fruits.concat(fruits2, ["Mandarin", "Granateple"]));
 // Samme som over, men legger til "Mandarin" i slutten av outputtet
 
 fruits.splice(2, 2, "Grapes", "Kiwi", "Pomegranate");
