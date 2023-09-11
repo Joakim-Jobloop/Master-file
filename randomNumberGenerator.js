@@ -3,8 +3,4 @@ function randomNumberGenerator() {
     return randomNumber
 }
 
-randomNumber = randomNumberGenerator()
-
-
-
-document.getElementById("randomNumber").textContent = "Your lucky number of the day is: " + randomNumber
+document.getElementById("randomNumber").textContent = "Your lucky number of the day is: " + randomNumberGenerator()
