@@ -43,19 +43,6 @@ div.calculator {
     margin-bottom: 100px;
 }
 
-#clock {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 10px;
-    font-size: 3.5rem;
-    font-weight: bold;
-    border-bottom: 5px solid black;
-    border-left: 3px solid black;
-
-
-}
-
 .calc-inputs {
     display: flex;
     flex-direction: column;
