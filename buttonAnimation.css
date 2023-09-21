@@ -13,10 +13,6 @@ button.one:hover {
 }
 
 
-button.two {
-  /* transition: transition 1s cubic-bezier(.19, 1, .22, 1); */
-}
-
 button.two:hover {
   animation: shaky 1s ease infinite both;
 }

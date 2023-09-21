@@ -9,6 +9,7 @@ body {
     gap: 50px;
     flex-direction: column;
     gap: 50px;
+    margin: 200px 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -44,6 +45,7 @@ div.calculator {
 }
 
 #clock {
+    transition: all 1s ease;
     position: absolute;
     top: 0;
     right: 0;
@@ -52,8 +54,10 @@ div.calculator {
     font-weight: bold;
     border-bottom: 5px solid black;
     border-left: 3px solid black;
+}
 
-
+#clock:hover {
+    opacity: 0.1;
 }
 
 .calc-inputs {

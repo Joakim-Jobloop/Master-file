@@ -1,78 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Master file</title>
-    <link rel="stylesheet" href="buttonAnimation.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="/images/icon/favicon.jpg">
-
-    <!-- <script src="conditionals.js"></script> -->
-    <!-- <script src="functions.js"></script> -->
-    <!-- <script src="JS_oppgave_1.js"></script> -->
-    <!-- <script src="methods.js"></script> -->
-    <!-- <script src="loops.js"></script> -->
-    <!-- <script src="countNumbersWithButton.js"></script> -->
-</head>
-
-<body>
-
-    <div id="clock">
-        <script src="clock.js"></script>
-    </div>
-
-    <div class="grid">
-        <button class="one">big?</button>
-        <button class="two">*Thump thump*</button>
-        <button class="three">spin me right round</button>
-        <button class=""></button>
-        <button class=""></button>
-        <button class=""></button>
-        <p>
-            My mother has
-            <span class="mothereyes" id="mothereyes" style="color:red">red</span>
-            eyes.
-        </p>
-    </div>
-    <div class="super">
-        <button class="superstyled">
-            <span>Contact now!</span>
-        </button>
-    </div>
-    <!-- <div class="moving-box"></div> -->
-    <button onclick="countNumbers()">Count Numbers</button>
-    <!-- <button id="countButton">Count Numbers</button> -->
-    <!-- <a href="contact.html">Contact Us</a> -->
-    <div class="calculator">
-        <div class="calc-inputs">
-            <!-- <label for="num1-el">Number 1:</label> -->
-            <input type="number" id="num1-el">
-            <!-- <label for="num1-el">Number 2:</label> -->
-            <input type="number" id="num2-el">
-            <!-- <span id="num1-el"></span>
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Master file</title>
+            <link rel="stylesheet" href="buttonAnimation.css">
+            <!-- <link rel="stylesheet" href="styles.css"> -->
+            <link rel="icon" type="image/x-icon" href="/images/icon/favicon.jpg">
+            <link rel="stylesheet" href="dom.css">
+            <!-- <script src="conditionals.js"></script> -->
+            <!-- <script src="functions.js"></script> -->
+            <!-- <script src="JS_oppgave_1.js"></script> -->
+            <!-- <script src="methods.js"></script> -->
+            <!-- <script src="loops.js"></script> -->
+            <!-- <script src="countNumbersWithButton.js"></script> -->
+        </head>
+        <body>
+            <div id="clock">
+                <script src="clock.js"></script>
+            </div>
+            <div class="grid">
+                <button class="one">big?</button>
+                <button class="two">*Thump thump*</button>
+                <button class="three">spin me right round</button>
+                <button class=""></button>
+                <button class=""></button>
+                <button class=""></button>
+                <p>
+                    My mother has
+                    <span class="mothereyes" id="mothereyes" style="color:red">red</span>
+                    eyes.
+                </p>
+            </div>
+            <div class="super">
+                <button class="superstyled">
+                    <span>Contact now!</span>
+                </button>
+            </div>
+            <!-- <div class="moving-box"></div> -->
+            <button onclick="countNumbers()">Count Numbers</button>
+            <!-- <button id="countButton">Count Numbers</button> -->
+            <!-- <a href="contact.html">Contact Us</a> -->
+            <div class="calculator">
+                <div class="calc-inputs">
+                    <!-- <label for="num1-el">Number 1:</label> -->
+                    <input type="number" id="num1-el">
+                    <!-- <label for="num1-el">Number 2:</label> -->
+                    <input type="number" id="num2-el">
+                    <!-- <span id="num1-el"></span>
                     <span id="num2-el"></span> -->
-        </div>
-        <br>
-        <button onclick="add()">Add</button>
-        <button onclick="subtract()">Subtract</button>
-        <button onclick="divide()">Divide</button>
-        <button onclick="multiply()">Multiply</button>
-        <br>
-        <span id="sum-el">Sum:</span>
-        <script src="calculator.js"></script>
-
-
-        <span id="greeting"></span>
-        <script src="greetings.js"></script>
-        <span id="randomNumber"></span>
-        <script src="randomNumberGenerator.js"></script>
-        <div id="mc_embed_shell">
-            <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
-            <style type="text/css">
+                </div>
+                <br>
+                <button onclick="add()">Add</button>
+                <button onclick="subtract()">Subtract</button>
+                <button onclick="divide()">Divide</button>
+                <button onclick="multiply()">Multiply</button>
+                <br>
+                <span id="sum-el">Sum:</span>
+                <script src="calculator.js"></script>
+                <span id="greeting"></span>
+                <script src="greetings.js"></script>
+                <span id="randomNumber"></span>
+                <script src="randomNumberGenerator.js"></script>
+                <div id="mc_embed_shell">
+                    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+                    <style type="text/css">
                 #mc_embed_signup {
                     background: #97d3d4;
                     padding: 20px;
@@ -84,56 +78,106 @@
 
                 /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
                  We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-            </style>
-            <div id="mc_embed_signup">
-                <form
-                    action="https://gmail.us21.list-manage.com/subscribe/post?u=beb5e9c453987e8411297a491&amp;id=77cb4bafc5&amp;f_id=00a8e0e6f0"
-                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-                    target="_blank">
-                    <div id="mc_embed_signup_scroll">
-                        <h2>Send me an email</h2>
-                        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                        <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span
-                                    class="asterisk">*</span></label><input type="email" name="EMAIL"
-                                class="required email" id="mce-EMAIL" required="" value=""><span
-                                id="mce-EMAIL-HELPERTEXT" class="helper_text"></span></div>
-                        <div class="mc-field-group"><label for="mce-FNAME">First Name </label><input type="text"
-                                name="FNAME" class=" text" id="mce-FNAME" value=""></div>
-                        <div class="mc-field-group"><label for="mce-LNAME">Last Name </label><input type="text"
-                                name="LNAME" class=" text" id="mce-LNAME" value=""></div>
-                        <div id="mce-responses" class="clear foot">
-                            <div class="response" id="mce-error-response" style="display: none;"></div>
-                            <div class="response" id="mce-success-response" style="display: none;"></div>
-                        </div>
-                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                            /* real people should not fill this in and expect good things - do not remove this or risk
+                    </style>
+                    <div id="mc_embed_signup">
+                        <form
+                            action="https://gmail.us21.list-manage.com/subscribe/post?u=beb5e9c453987e8411297a491&amp;id=77cb4bafc5&amp;f_id=00a8e0e6f0"
+                            method="post"
+                            id="mc-embedded-subscribe-form"
+                            name="mc-embedded-subscribe-form"
+                            class="validate"
+                            target="_blank"
+                        >
+                            <div id="mc_embed_signup_scroll">
+                                <h2>Send me an email</h2>
+                                <div class="indicates-required">
+                                    <span class="asterisk">*</span>
+                                    indicates required
+                                </div>
+                                <div class="mc-field-group">
+                                    <label for="mce-EMAIL">
+                                        Email Address
+                                        <span class="asterisk">*</span>
+                                    </label>
+                                    <input
+                                        type="email"
+                                        name="EMAIL"
+                                        class="required email"
+                                        id="mce-EMAIL"
+                                        required=""
+                                        value=""
+                                    >
+                                    <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+                                </div>
+                                <div class="mc-field-group">
+                                    <label for="mce-FNAME">First Name</label>
+                                    <input
+                                        type="text"
+                                        name="FNAME"
+                                        class=" text"
+                                        id="mce-FNAME"
+                                        value=""
+                                    >
+                                </div>
+                                <div class="mc-field-group">
+                                    <label for="mce-LNAME">Last Name</label>
+                                    <input
+                                        type="text"
+                                        name="LNAME"
+                                        class=" text"
+                                        id="mce-LNAME"
+                                        value=""
+                                    >
+                                </div>
+                                <div id="mce-responses" class="clear foot">
+                                    <div class="response" id="mce-error-response" style="display: none;"></div>
+                                    <div class="response" id="mce-success-response" style="display: none;"></div>
+                                </div>
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                    /* real people should not fill this in and expect good things - do not remove this or risk
                             form bot signups */
-                            <input type="text" name="b_beb5e9c453987e8411297a491_77cb4bafc5" tabindex="-1" value="">
-                        </div>
-                        <div class="optionalParent">
-                            <div class="clear foot">
-                                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"
-                                    value="Subscribe">
-                                <!-- <p style="margin: 0px auto;"><a href="http://eepurl.com/izDa2I" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p> -->
+                                    <input
+                                        type="text"
+                                        name="b_beb5e9c453987e8411297a491_77cb4bafc5"
+                                        tabindex="-1"
+                                        value=""
+                                    >
+                                </div>
+                                <div class="optionalParent">
+                                    <div class="clear foot">
+                                        <input
+                                            type="submit"
+                                            name="subscribe"
+                                            id="mc-embedded-subscribe"
+                                            class="button"
+                                            value="Subscribe"
+                                        >
+                                        <!-- <p style="margin: 0px auto;"><a href="http://eepurl.com/izDa2I" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p> -->
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
-                </form>
+                    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+                    <script type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+                </div>
+                <span id="whazzap"></span>
+                <span id="whazzap2"></span>
             </div>
-            <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-            <script
-                type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+
+            <div class="dom">
+            <div class="grandparent" id="grandparent">
+                <div class="parent">
+                    <div class="child" id="child"></div>
+                    <div class="child"></div>
+                </div>
+                <div class="parent">
+                    <div class="child"></div>
+                    <div class="child"></div>
+                </div>
+            </div>
         </div>
-
-        <span id="whazzap">
-
-        </span>
-        <span id="whazzap2">
-
-        </span>
-        <script src="DOM.js"></script>
-    </div>
-    <script src="recapLoops.js"></script>
-</body>
-
-</html>
+            <script src="recapLoops.js"></script>
+            <script src="DOM.js"></script>
+        </body>
+    </html>
